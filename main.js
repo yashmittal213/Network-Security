@@ -8,6 +8,10 @@ encrypt.addEventListener('click',function(e){
 	let arr = document.getElementById('cyphertextoutput').innerHTML
 	for(let i=0;i<s.length;i++)
 	{
+		if(s[i]==' ')
+		{
+			arr+=' ';
+		}
 		let x = s.charCodeAt(i)
 		if(x>=65 && x<=90)
 		{
@@ -39,6 +43,10 @@ decrypt.addEventListener('click',function(e){
 	let arr = document.getElementById('plaintextoutput').innerHTML
 	for(let i=0;i<s.length;i++)
 	{
+		if(s[i]==' ')
+		{
+			arr+=' ';
+		}
 		let x = s.charCodeAt(i)
 		if(x>=65 && x<=90)
 		{
